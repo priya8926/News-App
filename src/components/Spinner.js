@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import loading from './Full snake.gif'
+import loading from './l9.gif'
 
 export class Spinner extends Component {
   render() {

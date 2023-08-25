@@ -49,7 +49,7 @@ export class News extends Component {
     this.props.setProgress(100)
   }
   async componentDidMount() {
-    this.updatenews();
+    await this.updatenews();
   }
   //   handlePrevClick = async () => {
   //     this.setState({ page: this.state.page - 1 });
