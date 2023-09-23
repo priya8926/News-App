@@ -57,13 +57,11 @@ const News = (props) => {
         <>
             <h1 className='text-center' style={{ marginTop: "70px" }}>
                 NewsApp - Top Headlines from {capitalizeFirstLetter(props.category)}</h1>
-            {loading && <Spinner />}
-
-            <InfiniteScroll
+       <InfiniteScroll
                 dataLength={articles.length}
                 next={fetchMoreData}
                 hasMore={articles.length !== totalResults}
-                loader={<Spinner />}
+                loader= {<Spinner />}
             >
                 <div className='container my-3'>
                     <div className="row">
